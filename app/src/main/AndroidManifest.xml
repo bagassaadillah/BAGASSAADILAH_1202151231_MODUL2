@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bagas.bagass_1202151231">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity android:name=".MenuUtama"
+            android:label="Menu Utama"
+            />
+        <activity android:name=".TakeAway"
+            android:label="Take Away"
+            />
+        <activity android:name=".DineIn"
+            android:label="Dine In"
+            />
+        <activity android:name=".DaftarMenu"
+            android:label="Daftar Menu"
+            />
+        <activity android:name=".DetailMenu">
+            android:label="Detail Menu"
+                <category android:name="android.intent.category.LAUNCHER" />
+            android:parentActivityName="com.example.bagass_1202151231.DaftarMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DaftarMenu"/>
+        </activity>
+    </application>
+
+</manifest>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
